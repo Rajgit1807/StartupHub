@@ -32,3 +32,13 @@ export interface Startup {
   pitch?: string;
   createdAt: string;
 }
+export interface AuthorType {
+  _id: string;
+  id: number;
+  name: string;
+  username: string;
+  email:string;
+  image: string;
+  bio: string;
+  createdAt: string;
+}

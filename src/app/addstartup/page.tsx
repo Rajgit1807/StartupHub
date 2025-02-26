@@ -12,9 +12,9 @@ const StartUp: React.FC = () => {
             method: "POST",
             headers: { "Content-Type": "application/json" },
             body: JSON.stringify({
-              id: 2,
-              title: "New Startup",
-              slug: "new-startup",
+              id: 7,
+              title: "Whole tthee",
+              slug: "whole-tee",
               author: "67a38b0a5ba2d8016963aa56", 
               views: 0, 
               description: "A startup focused on AI and automation.",
@@ -56,13 +56,12 @@ const StartUp: React.FC = () => {
         Submit Your Startup
     </h1>
     </section>
-    <StartupForm/>
-      {/* <button className="startup-card-btn" onClick={createStartup}>
+      <button className="startup-card-btn" onClick={createStartup}>
         Create
       </button>
       <button className="startup-card-btn" onClick={showStartup}>
        Show
-      </button> */}
+      </button>
     </>
   );
 };

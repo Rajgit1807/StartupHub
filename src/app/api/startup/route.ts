@@ -4,12 +4,13 @@ import { connectStr } from "../db";
 import Startup from "@/lib/model/startup";
 
 export async function POST(req: NextRequest) {
+
+  console.log("Reached the Srtartup APi")
   try {
     await mongoose.connect(connectStr); 
   
     const body = await req.json();
 
-    console.log(body)
 
     if (!body.title || !body.description) {
       return NextResponse.json({ error: "Missing required fields" }, { status: 400 });
